@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Group1Flight.Models;
+using System.ComponentModel.Design;
 
 namespace Group1Flight.Controllers;
 
@@ -12,6 +13,16 @@ public class HomeController : Controller
     }
 
     public IActionResult Privacy()
+    {
+        return View();
+    }
+
+    public IActionResult Admin()
+    {
+        return View();
+    }
+
+    public IActionResult Airlines()
     {
         return View();
     }

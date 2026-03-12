@@ -1,0 +1,52 @@
+  @{
+    Layout = "_Layout";
+}
+
+@{
+    ViewData["Title"] = "Airlines Dashboard";
+    ViewData["BodyClass"] = "airlines-bg";
+  
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Airlines</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Group1Flight.styles.css" asp-append-version="true" />
+
+<div class="d-flex justify-content-end gap-2 mb-3">
+    <a class="btn btn-warning" href="/">Home</a>
+    <a class="btn btn-info" href="/Admin/Users">Admin</a>
+</div>
+
+
+</head>
+<div class="text-center">
+    <h1 class="display-4">Airlines Dashboard</h1>
+    <p>Welcome to the Airlines area. Here you can manage flights and view rights and regulations.</p>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Flights</h5>
+                    <p class="card-text">Manage flight schedules and details.</p>
+                    <a asp-area="Admin" asp-controller="Flights" asp-action="Index" class="btn btn-primary">Manage Flights</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Regulations</h5>
+                    <p class="card-text">View all rights and regulations.</p>
+                    <a href="#" class="btn btn-secondary">View</a>
+
+        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
